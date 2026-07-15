@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Data Analysis</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --panel: rgba(17, 24, 39, 0.92);
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #020617 0%, #111827 45%, #1e293b 100%);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 32px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--panel);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+            padding: 32px;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2.2rem;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--muted);
+            margin-bottom: 28px;
+        }
+
+        .grid {
+            display: grid;
+            gap: 24px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: #f8fafc;
+        }
+
+        img {
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Sales Data Analysis Project</h1>
+        <p class="subtitle">A polished overview of key sales insights presented through visual charts.</p>
+
+        <div class="grid">
+            <section class="card">
+                <h2>Bar Chart</h2>
+                <img src="bar_chart.png" alt="Bar chart of sales data">
+            </section>
+
+            <section class="card">
+                <h2>Pie Chart</h2>
+                <img src="pie_chart.png" alt="Pie chart of sales distribution">
+            </section>
+
+            <section class="card">
+                <h2>Line Chart</h2>
+                <img src="line_chart.png" alt="Line chart showing sales trend">
+            </section>
+
+            <section class="card">
+                <h2>Scatter Plot</h2>
+                <img src="scatter_plot.png" alt="Scatter plot of sales analysis">
+            </section>
+        </div>
+
+        <footer>
+            © 2026 Designed by Sanju
+        </footer>
+    </div>
+</body>
+</html>
